@@ -27,4 +27,12 @@ heroku stack:set container //this is to tell heroku that you will run docker con
 git push heroku main
 ```
 
+Helpful Heroku functions:
+Note: this should be run inside of the project. 
+```
+heroku -logs --tail //show latest log
+heroku ps:scale web=0 //this is to "turn off" the machine
+heroku ps:scale web=1 //this is to assign 1 web worker server
+```
+
 
